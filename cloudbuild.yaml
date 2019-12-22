@@ -9,7 +9,7 @@ steps:
   name: "gcr.io/cloud-builders/go"
   args: ["run", "."]
   env: ["GOPATH=."]
-  dir: "./"
+  dir: "./src/function_sum"
 
 
 # - id: "Rodando Phpunit"
