@@ -3,7 +3,7 @@ steps:
   name: 'gcr.io/cloud-builders/go'
   args: ['test', '.']
   env: ['GOPATH=.']
-  dir: "./src"
+  dir: "./src/function_sum"
 
 - id: "Executando o script"
   name: "gcr.io/cloud-builders/go"
