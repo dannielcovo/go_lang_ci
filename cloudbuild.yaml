@@ -1,0 +1,17 @@
+steps:
+- id: "Rodando teste"
+  name: 'gcr.io/cloud-builders/go'
+  args: ['test', '.']
+  env: ['GOPATH=.']
+  dir: "./src"
+
+- id: "Executando o script"
+  name: "gcr.io/cloud-builders/go"
+  args: ["run", "."]
+  env: ["GOPATH=."]
+  dir: "./src"
+
+
+# - id: "Rodando Phpunit"
+#   name: 'gcr.io/cloud-builders/docker'
+#   args: ['exec', '-t', 'app', 'php','/var/www/vendor/bin/phpunit', '-c', '/var/www/phpunit.xml' ]
